@@ -20,17 +20,25 @@ assert triangle(5,15,12) == 3
 assert triangle(1,1,4) == 0  
 (2 points)
 """
-def triangle(x,y,z):
-   print("Input lengths of the triangle sides: ")
-x = int(input("x: "))
-y = int(input("y: "))
-z = int(input("z: "))
+import math
+def triangle(a,b,c):
+    list1 = [a,b,c]
+    list1.sort()
+    a = list1[0]
+    b = list1[1]
+    c =  list1[2]
+    if c > a+b:
+        return 0
+    elif c < math.sqrt(a**2+b**2):
+        return 1
+    elif c == math.sqrt(a**2+b**2):
+        return 2
+    elif c > math.sqrt(a**2+b**2):
+        return 3
 
-if x == y == z:
-	print("right triangle")
-elif x==y or y==z or z==x:
-	print("obtuse triangle")
-else:
-	print("Scalene triangle")
+
+
+
+	
 
 
