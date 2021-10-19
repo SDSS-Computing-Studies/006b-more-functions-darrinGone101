@@ -8,3 +8,5 @@ def test1():
 
 def test2():
     assert problem1.convertTemp(32,'F') == 0
+test1()
+test2()
