@@ -20,8 +20,7 @@ def convertTemp(x,y):
         y = (x-32)*5/9
         return y
     
-print( convertTemp(32
-,'F'))
+
 
 
 
